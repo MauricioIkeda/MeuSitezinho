@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{% static 'styles/general.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+</head>
+<body>
+    <header>
+        <div class='container'>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="{% url "home" %}">Inicio</a></li>
+                        <li><a href="{% url "project_list" %}">Projetos</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+</body>
+</html>
